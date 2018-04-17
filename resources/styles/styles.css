@@ -6,7 +6,7 @@ html {
 body{
     margin: 0;
     font-family: Helvetica, sans-serif;
-    background-color: azure;
+    background-color: white;
 }
 
 .header {
@@ -75,4 +75,81 @@ body{
     font-weight: bold;
     font-size: 2rem;
     line-height: 1.2;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__icons {
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main__icons__item {
+    height: 8rem;
+    width: 5rem;
+    margin-right: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main__icons__item img {
+    width: 3.5rem;
+}
+
+.main__icons__item p {
+    text-align: center;
+}
+
+.main__info {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+}
+
+.main__info__item {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    margin-right: 5%;
+}
+
+.main__info__item__title {
+    padding: 0.5rem 1.25rem;
+    color: white;
+    font-weight: bold;
+    background-color: cadetblue;
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+
+.main__info__item p {
+    text-align: justify;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 4rem;
+    background-color: azure;
+    color: black;
+}
+
+.footer__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer img {
+    height: 1.5rem;
+    margin-right: 1rem;
 }
