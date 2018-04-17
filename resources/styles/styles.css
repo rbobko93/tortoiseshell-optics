@@ -190,6 +190,45 @@ body {
     }
 }
 
+@media all and (max-width: 760px) {
+    .header {
+        background-position: 20%;
+    }
+
+    .navbar__logo span {
+        display: none;
+    }
+
+    .header__title {
+        margin-top: 12rem;
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .header__title__text {
+        font-size: 1.5rem;
+    }
+
+    .main__icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__icons__item {
+        height: auto;
+        margin-bottom: 2rem;
+        margin-right: 0;
+    }
+
+    .main__icons__item img {
+        margin-bottom: 1rem;
+    }
+
+    .footer__content {
+        justify-content: center;
+    }
+}
+
 @media all and (max-width: 470px) {
     .header {
         height: 17rem;
@@ -250,8 +289,9 @@ body {
     }
 
     .main__info__item__title {
-        width: 100%;
+        width: auto;
         margin-bottom: 1rem;
+        margin-right: 0;
     }
 
     .main__info__item p{
