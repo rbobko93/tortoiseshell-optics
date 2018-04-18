@@ -8,3 +8,234 @@ body {
     font-family: Helvetica, sans-serif;
     background-color: white;
 }
+
+.container {
+    max-width: 960px;
+    margin: auto;
+}
+
+@media all and (max-width: 760px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+/*HEADER*/
+
+header {
+    height: 30rem;
+    background: url("../images/glasses-bg.png") no-repeat scroll center;
+    background-size: cover;
+    padding-top: 1rem;
+}
+
+nav {
+    padding: 1rem 0;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 1rem;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+}
+
+nav img {
+    height: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+}
+
+nav div.menu {
+    margin-right: 2rem;
+}
+
+nav ul {
+    display: inline-flex;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul.collapsed-menu {
+    display: none;
+}
+
+.title-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.title {
+    margin-top: 10rem;
+    margin-right: -2rem;
+    padding: 1.5rem 5rem;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.2;
+    background-color: white;
+}
+
+@media all and (max-width: 760px) {
+    header {
+        height: 22rem;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav ul.collapsed-menu {
+        display: inline-flex;
+    }
+
+    .title {
+        margin-top: 5rem;
+        margin-right: 2rem;
+        padding: 0.75rem 4rem;
+        font-size: 1.33rem;
+    }
+}
+
+@media all and (max-width: 560px) {
+    header {
+        height: 17rem;
+        background-position: 20%;
+    }
+
+    .brand {
+        display: none;
+    }
+
+    .title {
+        margin-top: 9rem;
+        margin-right: 0;
+        width: 100%;
+        padding: 1rem 0;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+/*SERVICES*/
+
+.services {
+    display: flex;
+    justify-content: center;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 5rem;
+    height: 8rem;
+    margin: 3rem;
+    text-align: center;
+}
+
+.service img {
+    max-width: 5rem;
+}
+
+.service img.paper-icon {
+    max-width: 3.5rem;
+}
+
+@media all and (max-width: 560px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3.77rem;
+        margin-bottom: 2.23rem;
+    }
+
+    .service {
+        margin: 0;
+        margin-bottom: 1.54rem;
+        height: auto;
+    }
+
+    .service p {
+        margin-top: 1rem;
+        font-size: 0.77rem;
+    }
+}
+
+/*INFO*/
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+}
+
+.item {
+    width: 35%;
+    margin-right: 5%;
+}
+
+.info .item h3 {
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+    background-color: cadetblue;
+    width: 10rem;
+    padding: 0.5rem 1.25rem;
+    margin-bottom: 1rem;
+}
+
+@media all and (max-width: 560px) {
+    .info {
+        flex-direction: column;
+    }
+
+    .item {
+        width: auto;
+        margin-right: 0;
+    }
+
+    .info .item h3 {
+        width: auto;
+    }
+
+    .info .item p {
+        font-size: 0.77rem;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+        padding: 0 2.5%;
+    }
+}
+
+/*FOOTER*/
+
+footer {
+    padding: 4rem;
+    background-color: azure;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+}
+
+footer img {
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+
+@media all and (max-width: 560px) {
+    .footer-container {
+        justify-content: center;
+    }
+
+    footer span {
+        display: none;
+    }
+}
